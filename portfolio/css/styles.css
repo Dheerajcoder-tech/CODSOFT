@@ -1,25 +1,23 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-/*===== VARIABLES CSS =====*/
+
 :root {
   --header-height: 3rem;
   --font-semi: 600;
-  /*===== Colores =====*/
-  /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
-  /* HSL color mode */
+ 
 
-  /*===== Fuente y tipografia =====*/
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
   --smaller-font-size: .75rem;
-  /*===== Margenes =====*/
+  background-color: black;
+
   --mb-2: 1rem;
   --mb-4: 2rem;
   --mb-5: 2.5rem;
   --mb-6: 3rem;
-  /*===== z index =====*/
+
   --z-back: -10;
   --z-fixed: 100;
 }
@@ -32,7 +30,7 @@
   }
 }
 
-/*===== BASE =====*/
+
 *, ::before, ::after {
   box-sizing: border-box;
 }
@@ -68,7 +66,7 @@ img {
   display: block;
 }
 
-/*===== CLASS CSS ===== */
+
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
@@ -94,7 +92,7 @@ img {
   padding-bottom: 2rem;
 }
 
-/*===== LAYOUT =====*/
+
 .bd-grid {
   max-width: 1024px;
   display: grid;
@@ -108,11 +106,11 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
+  background-color: white;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
-/*===== NAV =====*/
+
 .nav {
   height: var(--header-height);
   display: flex;
@@ -155,7 +153,6 @@ img {
 
 
 
-/*===== HOME =====*/
 .home {
   position: relative;
   row-gap: 5rem;
@@ -163,13 +160,14 @@ img {
 }
 .home__data {
   align-self: center;
+  color: white;
 }
 .home__title {
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
 }
 .home__title-color {
-  color: red;
+  color: green
 }
 .home__social {
   display: flex;
@@ -195,7 +193,7 @@ img {
   width: 360px;
 }
 
-/*BUTTONS*/
+
 .CN{
   display: block;
 }
@@ -223,7 +221,7 @@ img {
     box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
   }
 }
-/* ===== ABOUT =====*/
+
 .about__container {
   row-gap: 2rem;
   text-align: center;
@@ -233,18 +231,24 @@ img {
   margin-bottom: var(--mb-2);
   color: red;
 }
+.about__text {
+  color: green;
+}
 
 
-/* ===== SKILLS =====*/
+
+
 .skills__container {
   row-gap: 2rem;
   text-align: center;
 }
 .skills__subtitle {
   margin-bottom: var(--mb-2);
+  color: red;
 }
 .skills__text {
   margin-bottom: var(--mb-4);
+  color: green;
 }
 .skills__data {
   display: flex;
@@ -256,6 +260,7 @@ img {
   margin-bottom: var(--mb-4);
   border-radius: 0.5rem;
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  color: white;
 }
 .skills__icon {
   font-size: 2rem;
@@ -297,10 +302,10 @@ img {
   position: absolute;
  left: 70%;
  bottom: 10%;
- width: 620px;
+ width: 480px;
 }
 
-/* ===== WORK =====*/
+
 .work__container {
   row-gap: 2rem;
 }
@@ -315,8 +320,10 @@ img {
 .work__img img:hover {
   transform: scale(1.1);
 }
+.pr{
+  color: white;
+}
 
-/* ===== CONTACT =====*/
 .contact__input {
   width: 100%;
   font-size: var(--normal-font-size);
@@ -335,12 +342,13 @@ img {
   cursor: pointer;
   margin-left: auto;
   color: white;
-  background-color: black;
+  background-color: blue;
 }
 
-/* ===== FOOTER =====*/
+
+
 .footer {
-  background-color: black;
+  background-color: green;
   color: white;
   text-align: center;
   font-weight: var(--font-semi);
@@ -358,7 +366,7 @@ img {
   font-size: var(--smaller-font-size);
 }
 
-/* ===== MEDIA QUERIES=====*/
+
 @media screen and (max-width: 320px) {
   .home {
     row-gap: 2rem;
